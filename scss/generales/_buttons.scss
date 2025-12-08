@@ -1,0 +1,15 @@
+@use 'sass:map';
+@use '../utiles/maps' as mapa;
+
+.btn{
+    color: #030303;
+    font-weight: bolder;
+    font-size: map.get(mapa.$tamanioletras, fontsize-booton);
+    background: linear-gradient(180deg,rgba(135, 212, 166, 1) 7%, rgba(247, 247, 247, 1) 50%, rgba(15, 125, 94, 1) 95%);
+    border-color: #398a64;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: rgb(17, 119, 56);
+}

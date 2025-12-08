@@ -1,0 +1,14 @@
+@mixin margin ($superior, $derecha, $inferior, $izquierda){
+    margin-top: $superior;
+    margin-right: $derecha;
+    margin-bottom: $inferior;
+    margin-left: $izquierda;
+}
+
+
+@mixin padding ($superior, $derecha, $inferior, $izquierda){
+    padding-top: $superior;
+    padding-right: $derecha;
+    padding-bottom: $inferior;
+    padding-left: $izquierda;
+}

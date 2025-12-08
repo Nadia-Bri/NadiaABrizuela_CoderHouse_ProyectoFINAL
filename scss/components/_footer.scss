@@ -1,0 +1,45 @@
+@use '../utiles/extend';
+@use 'sass:map';
+@use '../utiles/maps' as mapa;
+@use '../utiles/mixin';
+@use '../utiles/variables' as variable;
+
+footer{
+    @extend %formato-text;
+    flex-direction: column;
+    position: static;
+    text-align: left;
+    color: map.get(mapa.$coloreselementos, color-footer);
+    font-size:small;
+    padding: 10px 30px;
+    a{
+        font-size: map.get(mapa.$tamanioletras, fontsize-footer);
+        text-decoration: none;
+        color: map.get(mapa.$coloreselementos, color-formaparte);
+        font-weight: bold;
+    }
+
+    p{
+        @extend %formato-text;
+        @include mixin.margin(0px,0px,0px,5px);
+    }
+
+    section{
+        @include mixin.margin(10px,10px,10px,10px);
+    }    
+    .redes-sociales{
+        display: flex;
+        flex-direction: variable.$ajustedireccion;
+        h4{
+            color: map.get(mapa.$coloreselementos, color-redessocialesh4);
+            @include mixin.margin(5px,5px,5px,5px);
+            font-size: map.get(mapa.$tamanioletras, fontsize-footer);
+        }
+        img{
+            padding: 4px;
+            width: 40px;
+            height: 40px;
+        }
+    }    
+}
+

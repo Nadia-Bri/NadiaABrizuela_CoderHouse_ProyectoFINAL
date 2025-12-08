@@ -1,0 +1,359 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=BBH+Sans+Bartle&display=swap");
+/*Reset del CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+footer, footer p, main .section h2, main .seccion form h5 {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.bloque-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.bloque-inicio div #imagen-principal {
+  display: flex;
+  text-align: center;
+  /* Centra la imagen dentro de su contenedor */
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  max-width: 100%;
+  /* Asegura que la imagen no se salga del contenedor */
+}
+.bloque-inicio div h1 {
+  text-align: center;
+}
+.bloque-inicio .nav-link:hover {
+  /*agrego estilo al elemento para que al pasar por encima de las opciones del menú pasen a color Verde para que haga juego con el logo y el boton buscar*/
+  color: rgba(28, 161, 57, 0.801);
+}
+.bloque-inicio div > ul > li .dropdown-menu .dropdown-item:hover {
+  color: rgba(28, 161, 57, 0.801);
+}
+.bloque-inicio .mi-navbar {
+  /* Aplique cambio para que el fondo del menú respete el color blanco quitando el que viene en boostrap */
+  color: white;
+}
+
+.seccion-principal {
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 30px;
+}
+.seccion-principal h2 {
+  color: rgb(13, 10, 29);
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 19px;
+  text-decoration: underline;
+}
+.seccion-principal .seccion {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  position: relative;
+  padding-bottom: 45px;
+}
+.seccion-principal .seccion .card {
+  /*agregamos el estilo de la card en el archivo css*/
+  width: 18rem;
+  margin: 0 auto;
+}
+.seccion-principal .seccion .carousel-control-next-icon {
+  background-color: rgb(74, 187, 112);
+}
+.seccion-principal .seccion .carousel-control-next-icon .visually-hidden {
+  background-color: rgb(6, 112, 11);
+}
+.seccion-principal .seccion .carousel-control-prev-icon {
+  background-color: rgb(74, 187, 112);
+}
+.seccion-principal .seccion .carousel-control-prev-icon .visually-hidden {
+  background-color: rgb(6, 112, 11);
+}
+.seccion-principal .seccion .carousel-indicators {
+  display: flex;
+  margin-top: 20px;
+}
+.seccion-principal .seccion .texto-formulario {
+  font-family: "Courier New", Courier, monospace;
+  text-align: start;
+}
+.seccion-principal .banner-format .banner-imag {
+  position: relative;
+  display: inline-block;
+}
+.seccion-principal .banner-format .banner-imag .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.seccion-principal .banner-format .banner-imag .texto-superpuesto h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(247, 247, 248);
+  text-shadow: 2px 2px 4px #000000;
+  padding: 10px;
+}
+.seccion-principal .banner-format .container .producto-banner {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  align-items: center;
+  height: 350px;
+}
+.seccion-principal .banner-format .container .texto-banner h3 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: rgb(23, 51, 32);
+  padding: 10px;
+  font-size: 20px;
+}
+.seccion-principal .banner-format .container .row > div:hover {
+  cursor: pointer;
+}
+.seccion-principal .banner-format .container .row > div:hover img { /*Agrego efecto en las imagenes que forman parte de los más comprados*/
+  cursor: pointer;
+  transform: scale(1.09);
+  font-size: calc(1vw + 1vh);
+  transition: transform 0.9s;
+}
+
+:root { /*me la traje de boostrap del carrusel para poder adaptar el color que tenia definido coloque veerde para que quede acorde al logo*/
+  --bs-carousel-indicator-active-bg: #44b435;
+  --bs-carousel-caption-color: #fff;
+  --bs-carousel-control-icon-filter: ;
+}
+
+main section .imagen-de-fondo {
+  background-image: url(../img/local.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  min-height: 100px;
+}
+main section .texto {
+  color: rgb(24, 23, 107);
+  font-size: large;
+  margin: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-align: center;
+  padding: auto;
+}
+main .nosotros { /*aggrego una gradiantes que lo coloque en parcial maps*/
+  background: linear-gradient(1deg, rgb(160, 160, 219) 0%, rgb(148, 247, 227) 69%, rgb(245, 242, 242) 95%);
+}
+main .nosotros img { /*aggrego una transicion*/
+  position: relative;
+  overflow: hidden;
+  transition: transform 3s ease;
+}
+main .nosotros:hover {
+  cursor: pointer;
+}
+main .nosotros:hover img {
+  cursor: pointer;
+  transform: scale(1.05);
+  font-size: calc(1vw + 1vh);
+}
+main .nosotros img:hover::after {
+  transform: scale(1);
+}
+
+.container {
+  display: grid;
+}
+.container div {
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.container div .imagen-producto {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: 350px;
+  width: auto;
+}
+.container div .lista-productos {
+  text-indent: 15px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: auto;
+  list-style-type: none;
+}
+.container div .precio {
+  text-indent: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  padding: auto;
+  text-indent: 15px;
+  color: rgb(15, 100, 19);
+  font-size: larger;
+  font-weight: bold;
+  list-style-type: none;
+}
+.container .row > div:hover {
+  cursor: pointer;
+}
+.container .row > div:hover img { /*Agrego efecto en las imagenes que forman parte de los más comprados*/
+  cursor: pointer;
+  transform: scale(1.06);
+  font-size: calc(1vw + 1vh);
+  transition: transform 0.9s;
+}
+
+.btn {
+  color: #030303;
+  font-weight: bolder;
+  font-size: 18px;
+  background: linear-gradient(180deg, rgb(135, 212, 166) 7%, rgb(247, 247, 247) 50%, rgb(15, 125, 94) 95%);
+  border-color: #398a64;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: rgb(17, 119, 56);
+}
+
+main .formulario-compra {
+  background: linear-gradient(90deg, rgb(223, 223, 245) 35%, rgb(193, 225, 232) 100%);
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+}
+main .section h2 {
+  padding: 15px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+main .seccion form h5 {
+  padding: 15px;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.seccion-principal .formulario-contactos {
+  background: linear-gradient(90deg, rgb(228, 247, 236) 10%, rgb(205, 250, 238) 99%);
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+}
+
+footer {
+  flex-direction: column;
+  position: static;
+  text-align: left;
+  color: rgb(0, 3, 1);
+  font-size: small;
+  padding: 10px 30px;
+}
+footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(5, 61, 5);
+  font-weight: bold;
+}
+footer p {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+footer section {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+footer .redes-sociales {
+  display: flex;
+  flex-direction: row;
+}
+footer .redes-sociales h4 {
+  color: rgb(30, 97, 27);
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+footer .redes-sociales img {
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Media query para computadoras de escritorio */
+@media (max-width: 1024px) {
+  body {
+    padding: 20px;
+  }
+  header, main, footer {
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
+/* Media query para tablet*/
+@media (max-width: 720px) {
+  body {
+    padding: 20px;
+  }
+  header, main, footer {
+    padding: 20px;
+    text-align: left;
+  }
+}
+/* Media query para celular para que se adapte mejor amplie el max*/
+@media (max-width: 676px) {
+  header .hamburguesa {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  main, footer {
+    padding: 5px 30px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=style.css.map */

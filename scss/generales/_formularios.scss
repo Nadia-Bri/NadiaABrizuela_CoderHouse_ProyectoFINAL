@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use '../utiles/maps' as mapa;
+@use '../utiles/extend';
+@use '../utiles/variables' as variable;
+@use '../utiles/mixin';
+
+
+
+.seccion-principal{
+    .formulario-contactos{
+        background: map.get(mapa.$coloreselementos, color-formularios);
+        @include mixin.padding(4px, 4px, 0px, 8px);
+    }
+}

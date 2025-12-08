@@ -1,0 +1,11 @@
+@use 'sass:map';
+@use '../utiles/maps' as mapa;
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=BBH+Sans+Bartle&display=swap');
+
+.body{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: map.get(mapa.$tamanioletras, fontsize-body);
+}
+

@@ -1,0 +1,29 @@
+$coloresproductos:(
+    color-primario: rgb(55, 87, 230),
+    color-secundario: white,
+    color-terciario: rgb(15, 100, 19),
+);
+
+$coloreselementos:(
+    color-link: rgba(28, 161, 57, 0.801),
+    color-carusel: rgb(74, 187, 112),
+    color-visual: rgb(6, 112, 11),
+    color-seccionh2: rgb(13, 10, 29),
+    color-redessocialesh4: rgb(30, 97, 27),
+    color-formaparte: rgb(5, 61, 5),
+    color-footer:rgb(0, 3, 1),
+    color-textonosotros: rgb(24, 23, 107),
+    color-imagen-nosotros: linear-gradient(1deg,rgba(160, 160, 219, 1) 0%, rgba(148, 247, 227, 1) 69%, rgba(245, 242, 242, 1) 95%),
+    color-fondo-compra: linear-gradient(90deg,rgba(223, 223, 245, 1) 35%, rgba(193, 225, 232, 1) 100%),
+    color-formularios: linear-gradient(90deg,rgba(228, 247, 236, 1) 10%, rgba(205, 250, 238, 1) 99%),
+);
+
+$tamanioletras:(
+    fontsize-footer: 16px,
+    fontsize-body: 20px,
+    fontsize-grilla: larger,
+    fontsize-h2: 19px,
+    fontsize-booton: 18px,
+    fontsize-compras:17px,
+    fontsize-nosotros: large,
+);

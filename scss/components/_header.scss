@@ -1,0 +1,156 @@
+@use '../utiles/extend';
+@use 'sass:map';
+@use '../utiles/maps' as mapa;
+@use '../utiles/mixin';
+@use '../utiles/variables' as variable;
+
+
+.bloque-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    div {
+        #imagen-principal {
+            display: flex;
+            text-align: center;
+            /* Centra la imagen dentro de su contenedor */
+            @include mixin.margin(0px, 0px, 20px, 0px);
+            max-width: 100%;
+            /* Asegura que la imagen no se salga del contenedor */
+        }
+
+        h1 {
+            // @extend %formato-text;
+            text-align: center;
+        }
+    }
+
+    .nav-link:hover {
+        /*agrego estilo al elemento para que al pasar por encima de las opciones del menú pasen a color Verde para que haga juego con el logo y el boton buscar*/
+        color: map.get(mapa.$coloreselementos, color-link);
+    }
+
+    div>ul>li {
+        .dropdown-menu {
+            .dropdown-item:hover {
+                color: map.get(mapa.$coloreselementos, color-link);
+            }
+        }
+    }
+
+    .mi-navbar {
+        /* Aplique cambio para que el fondo del menú respete el color blanco quitando el que viene en boostrap */
+        color: map.get(mapa.$coloresproductos, color-secundario);
+    }
+}
+
+.seccion-principal {
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 30px;
+
+    h2 {
+        color: map.get(mapa.$coloreselementos, color-seccionh2);
+        @include mixin.margin(5px, 5px, 5px, 5px);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: map.get(mapa.$tamanioletras, fontsize-h2);
+        text-decoration: underline;
+    }
+    .seccion {
+        @include mixin.margin(10px, 15px, 10px, 15px);
+        position: relative;
+        padding-bottom: 45px;
+
+        .card {
+            /*agregamos el estilo de la card en el archivo css*/
+            width: 18rem;
+            margin: 0 auto;
+        }
+
+        .carousel-control-next-icon {
+            background-color: map.get(mapa.$coloreselementos, color-carusel);
+
+            .visually-hidden {
+                background-color: map.get(mapa.$coloreselementos, color-visual);
+            }
+        }
+
+        .carousel-control-prev-icon {
+            background-color: map.get(mapa.$coloreselementos, color-carusel);
+
+            .visually-hidden {
+                background-color: map.get(mapa.$coloreselementos, color-visual);
+            }
+        }
+
+        .carousel-indicators {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .texto-formulario {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: start;
+        }
+    }
+    .banner-format {
+        .banner-imag {
+            position: relative;
+            display: inline-block;
+            .img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                overflow: hidden;
+            }
+            .texto-superpuesto h3{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;             
+                color: rgb(247, 247, 248);
+                text-shadow: 2px 2px 4px #000000;
+                padding: 10px;
+            }
+        }
+        .container{
+            .producto-banner {
+                position: relative;
+                width: auto;
+                overflow: hidden;
+                align-items: center;
+                height: 350px;
+            }
+            .texto-banner h3{
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;             
+                color: rgb(23, 51, 32);
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .row > div:hover{
+                cursor: pointer;
+            }
+
+            .row > div:hover img{ /*Agrego efecto en las imagenes que forman parte de los más comprados*/
+                cursor: pointer;
+                transform: scale(1.09);
+                font-size: calc(1vw + 1vh);
+                transition: transform .9s;
+            }
+        }
+    }
+}
+
+
+:root {/*me la traje de boostrap del carrusel para poder adaptar el color que tenia definido coloque veerde para que quede acorde al logo*/
+    --bs-carousel-indicator-active-bg: #44b435;
+    --bs-carousel-caption-color: #fff;
+    --bs-carousel-control-icon-filter: ;
+}

@@ -1,0 +1,40 @@
+/* Media query para computadoras de escritorio */
+
+@media (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+    header, main, footer {
+        justify-content: space-between;
+        padding: 15px;
+    }
+}
+
+
+/* Media query para tablet*/
+@media (max-width: 720px){
+    body{
+        padding: 20px;
+    }
+    header, main, footer {
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+/* Media query para celular para que se adapte mejor amplie el max*/
+@media (max-width: 676px){ 
+    header .hamburguesa{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    main, footer {
+        padding: 5px 30px;
+        text-align: left;
+    }
+}
+
+
+

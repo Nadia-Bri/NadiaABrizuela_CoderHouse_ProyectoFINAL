@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use '../utiles/maps' as mapa;
+@use '../utiles/extend';
+@use '../utiles/variables' as variable;
+@use '../utiles/mixin';
+
+
+main{
+    .formulario-compra{
+        background: map.get(mapa.$coloreselementos, color-fondo-compra);
+        @include mixin.padding(4px, 4px, 0px, 8px);
+    }
+    .section h2{
+        @extend %formato-text;
+        padding: 15px;  
+        font-size: map.get(mapa.$tamanioletras, fontsize-h2);
+        font-weight: lighter;
+    }
+
+    .seccion form h5{
+        @extend %formato-text;
+        padding: 15px;  
+        font-size: map.get(mapa.$tamanioletras, fontsize-compras);
+        font-weight: lighter;
+    }
+}
