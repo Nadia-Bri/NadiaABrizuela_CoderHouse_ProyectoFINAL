@@ -54,7 +54,6 @@ footer, footer p, main .section h2, main .seccion form h5 {
 .seccion-principal {
   justify-content: space-between;
   text-align: center;
-  padding: 10px 30px;
 }
 .seccion-principal h2 {
   color: rgb(13, 10, 29);
@@ -78,6 +77,19 @@ footer, footer p, main .section h2, main .seccion form h5 {
   /*agregamos el estilo de la card en el archivo css*/
   width: 18rem;
   margin: 0 auto;
+}
+.seccion-principal .seccion .card div .precio {
+  text-indent: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  padding: auto;
+  text-indent: 15px;
+  color: rgb(15, 100, 19);
+  font-size: larger;
+  font-weight: bold;
+  list-style-type: none;
 }
 .seccion-principal .seccion .carousel-control-next-icon {
   background-color: rgb(74, 187, 112);
@@ -118,7 +130,7 @@ footer, footer p, main .section h2, main .seccion form h5 {
   text-align: center;
   color: rgb(247, 247, 248);
   text-shadow: 2px 2px 4px #000000;
-  padding: 10px;
+  font-size: calc(1.25vw + 1.25vh);
 }
 .seccion-principal .banner-format .container .producto-banner {
   position: relative;
@@ -133,6 +145,7 @@ footer, footer p, main .section h2, main .seccion form h5 {
   color: rgb(23, 51, 32);
   padding: 10px;
   font-size: 20px;
+  font-size: calc(1.2vw + 1.2vh);
 }
 .seccion-principal .banner-format .container .row > div:hover {
   cursor: pointer;
@@ -195,7 +208,6 @@ main .nosotros img:hover::after {
   display: grid;
 }
 .container div {
-  padding: 15px;
   overflow: hidden;
   position: relative;
 }
@@ -329,7 +341,7 @@ footer .redes-sociales img {
 }
 
 /* Media query para computadoras de escritorio */
-@media (max-width: 1024px) {
+@media (max-width: 1320) {
   body {
     padding: 20px;
   }
@@ -344,7 +356,7 @@ footer .redes-sociales img {
     padding: 20px;
   }
   header, main, footer {
-    padding: 20px;
+    padding: 8x;
     text-align: left;
   }
 }
@@ -357,7 +369,7 @@ footer .redes-sociales img {
     display: none;
   }
   main, footer {
-    padding: 5px 30px;
+    padding: 5px 5px;
     text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

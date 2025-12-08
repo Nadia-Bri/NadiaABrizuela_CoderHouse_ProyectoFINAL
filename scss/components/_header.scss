@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 30px; 
 
     div {
         #imagen-principal {
@@ -50,7 +50,8 @@
 .seccion-principal {
     justify-content: space-between;
     text-align: center;
-    padding: 10px 30px;
+
+    // padding: 10px 30px; pruebo dejarlo sin efecto
 
     h2 {
         color: map.get(mapa.$coloreselementos, color-seccionh2);
@@ -68,6 +69,16 @@
             /*agregamos el estilo de la card en el archivo css*/
             width: 18rem;
             margin: 0 auto;
+            div .precio{
+                text-indent: 15px;
+                @include mixin.margin(20px,20px,15px,25px);
+                padding: auto;
+                text-indent: 15px;
+                color: map.get(mapa.$coloresproductos, color-terciario);
+                font-size: map.get(mapa.$tamanioletras, fontsize-grilla);
+                font-weight: bold;
+                list-style-type: none;
+            }
         }
 
         .carousel-control-next-icon {
@@ -115,7 +126,8 @@
                 text-align: center;             
                 color: rgb(247, 247, 248);
                 text-shadow: 2px 2px 4px #000000;
-                padding: 10px;
+                // padding: 10px;
+                font-size: calc(1.25vw + 1.25vh);
             }
         }
         .container{
@@ -132,6 +144,7 @@
                 color: rgb(23, 51, 32);
                 padding: 10px;
                 font-size: 20px;
+                font-size: calc(1.2vw + 1.2vh);
             }
 
             .row > div:hover{

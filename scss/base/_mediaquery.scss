@@ -1,6 +1,6 @@
 /* Media query para computadoras de escritorio */
 
-@media (max-width: 1024px) {
+@media (max-width: 1320) {
     body {
         padding: 20px;
     }
@@ -17,7 +17,7 @@
         padding: 20px;
     }
     header, main, footer {
-        padding: 20px;
+        padding: 8x;
         text-align: left;
     }
 }
@@ -31,9 +31,12 @@
         display: none;
     }
     main, footer {
-        padding: 5px 30px;
+        // padding: 5px 30px;
+        padding: 5px 5px;
         text-align: left;
+
     }
+    
 }
 
 
