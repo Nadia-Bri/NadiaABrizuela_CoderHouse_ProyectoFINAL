@@ -13,3 +13,7 @@
     cursor: pointer;
     color: rgb(17, 119, 56);
 }
+
+.btn:active{
+    --bs-btn-active-color: #175035;
+}

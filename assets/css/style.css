@@ -254,6 +254,10 @@ main .nosotros img:hover::after {
   color: rgb(17, 119, 56);
 }
 
+.btn:active {
+  --bs-btn-active-color: #175035;
+}
+
 main .formulario-compra {
   background: linear-gradient(90deg, rgb(223, 223, 245) 35%, rgb(193, 225, 232) 100%);
   padding-top: 4px;
