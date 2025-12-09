@@ -212,10 +212,12 @@ main .nosotros img:hover::after {
 
 .container {
   display: grid;
+  gap: 20px;
 }
 .container div {
   overflow: hidden;
   position: relative;
+  padding: 15px;
 }
 .container div .imagen-producto {
   display: flex;
