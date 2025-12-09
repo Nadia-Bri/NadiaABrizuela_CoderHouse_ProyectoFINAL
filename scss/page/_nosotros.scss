@@ -27,6 +27,7 @@ main{
 
     .nosotros{ /*aggrego una gradiantes que lo coloque en parcial maps*/
         background: map.get(mapa.$coloreselementos, color-imagen-nosotros);
+        @include mixin.margin(10px, 15px, 10px, 15px);
     
         img{/*aggrego una transicion*/
             position: relative;

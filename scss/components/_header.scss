@@ -50,9 +50,8 @@
 .seccion-principal {
     justify-content: space-between;
     text-align: center;
-
-    // padding: 10px 30px; pruebo dejarlo sin efecto
-
+    padding: 10px 30px; 
+    
     h2 {
         color: map.get(mapa.$coloreselementos, color-seccionh2);
         @include mixin.margin(5px, 5px, 5px, 5px);
@@ -64,7 +63,6 @@
         @include mixin.margin(10px, 15px, 10px, 15px);
         position: relative;
         padding-bottom: 45px;
-
         .card {
             /*agregamos el estilo de la card en el archivo css*/
             width: 18rem;
