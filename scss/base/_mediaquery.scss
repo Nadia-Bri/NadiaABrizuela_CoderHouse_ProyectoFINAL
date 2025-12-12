@@ -30,13 +30,29 @@
     header nav{
         display: none;
     }
-    main, footer {
-        // padding: 5px 30px;
-        padding: 5px 5px;
+    main{
         text-align: left;
+        .seccion-principal{
+            padding: 0;
+            .banner-format {
+                .texto-superpuesto h3{
+                    width: 100%;
+                }
+            }
+        }
+        .container {
+            div {
+            padding: 0;
+            }
+        }
+    }
+
+    footer {
+        text-align: left;
+        padding: 0;
 
     }
-    
+
 }
 
 

@@ -376,8 +376,20 @@ footer .redes-sociales img {
   header nav {
     display: none;
   }
-  main, footer {
-    padding: 5px 5px;
+  main {
     text-align: left;
+  }
+  main .seccion-principal {
+    padding: 0;
+  }
+  main .seccion-principal .banner-format .texto-superpuesto h3 {
+    width: 100%;
+  }
+  main .container div {
+    padding: 0;
+  }
+  footer {
+    text-align: left;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
