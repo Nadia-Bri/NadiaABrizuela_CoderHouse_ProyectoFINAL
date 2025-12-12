@@ -32,19 +32,19 @@
     }
     main{
         text-align: left;
-        .seccion-principal{
+    }
+
+    main.seccion-principal{
+        padding: 0;
+    }
+    main.seccion-principal .banner-format .texto-superpuesto h3 {
+        width: 100%;
+    }
+
+    main .container {
+        div {
             padding: 0;
-            .banner-format {
-                .texto-superpuesto h3{
-                    width: 100%;
-                }
             }
-        }
-        .container {
-            div {
-            padding: 0;
-            }
-        }
     }
 
     footer {

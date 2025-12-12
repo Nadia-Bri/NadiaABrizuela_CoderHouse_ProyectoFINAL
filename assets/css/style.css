@@ -379,10 +379,10 @@ footer .redes-sociales img {
   main {
     text-align: left;
   }
-  main .seccion-principal {
+  main.seccion-principal {
     padding: 0;
   }
-  main .seccion-principal .banner-format .texto-superpuesto h3 {
+  main.seccion-principal .banner-format .texto-superpuesto h3 {
     width: 100%;
   }
   main .container div {
