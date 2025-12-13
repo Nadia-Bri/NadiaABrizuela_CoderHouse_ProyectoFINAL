@@ -139,7 +139,7 @@ footer, footer p, main .section h2, main .seccion form h5 {
   width: auto;
   overflow: hidden;
   align-items: center;
-  height: 350px;
+  height: 300px;
 }
 .seccion-principal .banner-format .container .texto-banner h3 {
   font-family: "Courier New", Courier, monospace;
@@ -226,7 +226,7 @@ main .nosotros img:hover::after {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  height: 350px;
+  height: 300px;
   width: auto;
 }
 .container div .lista-productos {
